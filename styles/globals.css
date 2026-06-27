@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-foreground font-body antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent text-white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-bg;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent;
+  }
+}
+
+@layer components {
+  .section-label {
+    @apply text-accent font-display text-xs tracking-[0.2em] uppercase font-semibold;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl font-display font-bold text-foreground tracking-tight;
+  }
+
+  .card {
+    @apply bg-surface border border-border rounded-2xl p-6 transition-all duration-300;
+  }
+
+  .card:hover {
+    @apply border-accent/40 shadow-lg shadow-accent/5;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 bg-accent hover:bg-accent-light text-white font-display font-semibold text-sm rounded-xl transition-all duration-200 hover:scale-105 active:scale-95;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 px-5 py-2.5 border border-border hover:border-accent text-secondary hover:text-foreground font-display font-semibold text-sm rounded-xl transition-all duration-200;
+  }
+
+  .skill-chip {
+    @apply inline-flex items-center px-3 py-1 bg-surface border border-border text-secondary text-xs font-body rounded-lg transition-all duration-200 hover:border-accent hover:text-accent cursor-default;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent;
+  }
+
+  .glow {
+    box-shadow: 0 0 40px -12px rgba(99, 102, 241, 0.4);
+  }
+}
+
+/* Cursor blink after name */
+.cursor::after {
+  content: '|';
+  @apply text-accent animate-blink ml-0.5;
+}
+
+/* Section fade-in utility */
+.animate-delay-100 { animation-delay: 100ms; }
+.animate-delay-200 { animation-delay: 200ms; }
+.animate-delay-300 { animation-delay: 300ms; }
+.animate-delay-400 { animation-delay: 400ms; }
