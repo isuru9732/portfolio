@@ -30,11 +30,11 @@ export default function ContactSection() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center">
           <p className="section-label mb-3">Get in touch</p>
-          <h2 className="section-heading mb-4">Let's work together</h2>
+          <h2 className="section-heading mb-4">Let&apos;s work together</h2>
           <p className="text-secondary leading-relaxed mb-12">
-            I'm currently open to Senior Software Engineer opportunities — full
-            time or contract. If you're looking for someone who takes ownership
-            from schema design to deployment, let's talk.
+            I&apos;m currently open to Senior Software Engineer opportunities — full
+            time or contract. If you&apos;re looking for someone who takes ownership
+            from schema design to deployment, let&apos;s talk.
           </p>
 
           <div className="grid sm:grid-cols-3 gap-4 mb-10">

@@ -18,7 +18,7 @@ export default function AboutSection() {
             </h2>
             <div className="space-y-4 text-secondary leading-relaxed">
               <p>
-                I'm a Senior Software Engineer with 5+ years of experience
+                I&apos;m a Senior Software Engineer with 5+ years of experience
                 delivering scalable, production-grade applications. My primary
                 expertise is in{" "}
                 <span className="text-foreground font-medium">
@@ -31,18 +31,18 @@ export default function AboutSection() {
                 <span className="text-foreground font-medium">
                   enterprise-level systems in the education domain
                 </span>
-                . I've been a key engineer on a multi-tenant School Resource
+                . I&apos;ve been a key engineer on a multi-tenant School Resource
                 Planning platform supporting multiple branches with centralised
                 operations, Keycloak authentication, automated surcharge
-                processing, and microservices architecture. I've also built a
+                processing, and microservices architecture. I&apos;ve also built a
                 Tutor Management Platform that automated the entire tuition class
                 lifecycle — for individual tutors, institutes, and parents
                 tracking student progress.
               </p>
               <p>
-                Beyond education, I've delivered e-commerce and event management
+                Beyond education, I&apos;ve delivered e-commerce and event management
                 applications, giving me exposure to different business domains
-                and architectures. In my current role I don't just write code — I
+                and architectures. In my current role I don&apos;t just write code — I
                 mentor junior developers, conduct code reviews, own complex
                 production modules, and collaborate closely with architects and
                 DevOps teams.
@@ -67,7 +67,6 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Stats */}
           <div className="grid grid-cols-2 gap-4">
             {stats.map((stat) => (
               <div
